@@ -1,7 +1,9 @@
+
 <!DOCTYPE html>
 <html>
 <head>
-	<style>
+    <style>
+        
   @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,100&display=swap');
 *{
   font-family: 'Poppins', sans-serif;
@@ -74,8 +76,8 @@ nav ul li a:hover{
   color: red;
 }
 
-</style>
 
+    </style>
 <title>INSTACAM!</title>
 
 
@@ -95,27 +97,65 @@ nav ul li a:hover{
 <p>
 Here are the latest trending photos:
 </p>
-
-<button id= "btnID" onclick="sortFun()">
-Sort A-Z
-</button>
+<div>
 
 
+    <Table>
+    <tr>
+      <td>
+      <div class="column">
+        <div class="content"><img  src="https://a-z-animals.com/media/2021/01/Golden-eyed-leaf-frog-400x300.jpg"></div>
+      </div></td>
+      <td><div class="column">
+        <div class="content"><img  src="https://a-z-animals.com/media/2021/01/spring-colored-birds-flirting-400x300.jpg"></div>
+      </div></td>
+      <td><div class="column">
+        <div class="content"><img src="https://a-z-animals.com/media/2021/01/Wild-Chameleon-Reptile-With-Beautiful-Colors-400x300.jpg"></div>
+      </div></td>
+    
+    </tr>
+    
+    <tr>
+      <td><div class="column">
+        <div class="content"><img src="https://a-z-animals.com/media/2021/01/Jellyfish-with-neon-glow-light-effect-in-sea-aquarium-in-Sentosa-Singapore-400x300.jpg"></div>
+      </div></td>
+      <td><div class="column">
+        <div class="content"><img src="https://a-z-animals.com/media/2021/01/Queen-butterfly-danaus-gilippus-on-blue-hydrangea-flowers-400x300.jpg"></div>
+      </div></td>
+      <td><div class="column">
+        <div class="content"><img src="https://a-z-animals.com/media/2021/01/mammals-400x300.jpg"></div>
+      </div></td>
+    
+    </tr>
+    
+  
+    
+    
+    
+    </Table>
+    </div>
+
+    <br>
+    <br>
+
+    <hr>
+    <p>after sorting: </p>
 
 
-<script>let btn = document.getElementById("btnID")
+<script>
+        
 
-let images = [
+    let images = [
 	{name: 'frog', url: 'https://a-z-animals.com/media/2021/01/Golden-eyed-leaf-frog-400x300.jpg'},
  	{name: 'bird', url:'https://a-z-animals.com/media/2021/01/spring-colored-birds-flirting-400x300.jpg'},
   {name: 'lizard', url:'https://a-z-animals.com/media/2021/01/Wild-Chameleon-Reptile-With-Beautiful-Colors-400x300.jpg'},
   {name: 'jelly', url:'https://a-z-animals.com/media/2021/01/Jellyfish-with-neon-glow-light-effect-in-sea-aquarium-in-Sentosa-Singapore-400x300.jpg'},
   {name: 'butterfly', url:'"https://a-z-animals.com/media/2021/01/Queen-butterfly-danaus-gilippus-on-blue-hydrangea-flowers-400x300.jpg'},
   {name: 'animals', url:'https://a-z-animals.com/media/2021/01/mammals-400x300.jpg'}
-]
+];
 
 
-function sortFun(){
+
 
 images.sort(compare);
 
@@ -134,7 +174,9 @@ let imgObj = document.createElement ("img");
 imgObj.src = imageItem.url; 
 document.body.append (imgObj);
 }
-}
-</script>
+
+    </script>
+
+
 </body>
 </html>
